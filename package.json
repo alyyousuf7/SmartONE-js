@@ -1,0 +1,39 @@
+{
+  "name": "smartone-js",
+  "version": "0.0.1",
+  "description": "SmartONE SDK in Javascript",
+  "author": "Ali Yousuf <aly.yousuf7@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/alyyousuf7/smartone-js",
+  "bugs": {
+    "url": "https://github.com/alyyousuf7/smartone-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyyousuf7/smartone-js.git"
+  },
+  "main": "./dist/SmartONE.js",
+  "types": "./dist/SmartONE.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist/ && npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "axios-cookiejar-support": "^4.0.3",
+    "jsdom": "^20.0.0",
+    "jwt-decode": "^3.1.2",
+    "openid-connect": "^1.2.4",
+    "tough-cookie": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^20.0.0",
+    "@types/node": "^16.11.68",
+    "@types/openid-client": "^3.7.0",
+    "@types/tough-cookie": "^4.0.2",
+    "typescript": "^5.0.4"
+  }
+}
